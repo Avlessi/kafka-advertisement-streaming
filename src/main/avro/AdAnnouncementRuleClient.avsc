@@ -1,0 +1,51 @@
+{
+  "type": "record",
+  "name": "AdAnnouncementRuleClient",
+  "namespace": "com.avlesi.advertisement.model",
+  "fields": [
+    {
+      "name": "ruleId",
+      "type": "string"
+    },
+    {
+      "name": "clientId",
+      "type": "string"
+    },
+    {
+      "name": "adAnnouncementId",
+      "type": "string"
+    },
+    {
+      "name": "announcementName",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "announcementText",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "announcementCategory",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "adPartnerId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "record",
+  "namespace": "com.avlesi.advertisement.model",
+  "name": "AdPartner",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "doc": "mandatory partner identifier"
+    },
+    {
+      "name": "name",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "url",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

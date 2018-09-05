@@ -1,0 +1,75 @@
+{
+  "type": "record",
+  "name": "AdRule",
+  "namespace": "com.avlesi.advertisement.model",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "doc": "mandatory rule identifier"
+    },
+    {
+      "name": "name",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "adAnnouncementId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "rule",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "namespace": "com.avlesi.advertisement.model",
+          "name": "Rule",
+          "fields": [
+            {
+              "name": "sexConstraint",
+              "type": [
+                "null",
+                {"type": "array", "items": "string"}
+              ],
+              "default": null
+            },
+            {
+              "name": "ageConstraint",
+              "type": [
+                "null",
+                {"type": "array", "items": "int"}
+              ],
+              "default": null,
+              "doc" : "expect 2 numbers: start age and end age. Client age must be between these numbers (inclusively)"
+            },
+            {
+              "name": "countryConstraint",
+              "type": [
+                "null",
+                {"type": "array", "items": "string"}
+              ],
+              "default": null
+            },
+            {
+              "name": "cityConstraint",
+              "type": [
+                "null",
+                {"type": "array", "items": "string"}
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    }
+  ]
+}

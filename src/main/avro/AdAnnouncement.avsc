@@ -1,0 +1,58 @@
+{
+  "type": "record",
+  "name": "AdAnnouncement",
+  "namespace": "com.avlesi.advertisement.model",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "doc": "mandatory announcement identifier"
+    },
+    {
+      "name": "announcementDetails",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "namespace": "com.avlesi.advertisement.model",
+          "name": "AnnouncementDetails",
+          "fields": [
+            {
+              "name": "name",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "text",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "category",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "adPartnerId",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    }
+  ]
+}

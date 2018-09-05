@@ -1,0 +1,66 @@
+{
+  "type": "record",
+  "name": "AdClient",
+  "namespace": "com.avlesi.advertisement.model",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "doc": "mandatory client identifier"
+    },
+    {
+      "name": "clientDetails",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "namespace": "com.avlesi.advertisement.model",
+          "name": "ClientDetails",
+          "fields": [
+            {
+              "name": "name",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "sex",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "age",
+              "type": [
+                "null",
+                "int"
+              ],
+              "default": null
+            },
+            {
+              "name": "country",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "city",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    }
+  ]
+}
